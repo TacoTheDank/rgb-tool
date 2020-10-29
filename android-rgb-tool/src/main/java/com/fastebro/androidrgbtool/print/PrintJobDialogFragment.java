@@ -2,15 +2,16 @@ package com.fastebro.androidrgbtool.print;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialogFragment;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.model.events.PrintColorDetailsEvent;
 import com.fastebro.androidrgbtool.model.events.PrintColorEvent;
 import com.fastebro.androidrgbtool.model.events.PrintPaletteEvent;
 import com.fastebro.androidrgbtool.widgets.SweetInputDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import org.greenrobot.eventbus.EventBus;
 

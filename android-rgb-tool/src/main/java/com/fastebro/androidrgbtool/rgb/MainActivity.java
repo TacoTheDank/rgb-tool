@@ -13,15 +13,14 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.print.PrintManager;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.ShareActionProvider;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.MenuItemCompat;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.colorpicker.ColorPickerActivity;
@@ -43,6 +42,8 @@ import com.fastebro.androidrgbtool.utils.ColorUtils;
 import com.fastebro.androidrgbtool.utils.CommonUtils;
 import com.fastebro.androidrgbtool.utils.FragmentUtils;
 import com.fastebro.androidrgbtool.utils.ImageUtils;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

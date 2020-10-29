@@ -2,13 +2,14 @@ package com.fastebro.androidrgbtool.rgb;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialogFragment;
+
+import androidx.annotation.NonNull;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.model.events.ErrorMessageEvent;
 import com.fastebro.androidrgbtool.model.events.UpdateHexValueEvent;
 import com.fastebro.androidrgbtool.widgets.SweetInputDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import org.greenrobot.eventbus.EventBus;
 

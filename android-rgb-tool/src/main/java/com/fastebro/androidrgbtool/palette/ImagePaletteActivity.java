@@ -6,13 +6,14 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.print.PrintManager;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.view.menu.MenuBuilder;
-import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridView;
+
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.widget.ShareActionProvider;
+import androidx.core.view.MenuItemCompat;
+import androidx.fragment.app.DialogFragment;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.commons.EventBaseActivity;

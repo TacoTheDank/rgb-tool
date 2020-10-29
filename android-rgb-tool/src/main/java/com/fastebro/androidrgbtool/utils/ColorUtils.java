@@ -1,7 +1,8 @@
 package com.fastebro.androidrgbtool.utils;
 
 import android.graphics.Color;
-import android.support.annotation.IntRange;
+
+import androidx.annotation.IntRange;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.RGBToolApplication;

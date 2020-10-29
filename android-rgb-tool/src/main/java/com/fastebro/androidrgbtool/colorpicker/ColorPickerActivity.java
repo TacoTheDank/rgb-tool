@@ -10,16 +10,16 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.graphics.Palette;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.content.ContextCompat;
+import androidx.palette.graphics.Palette;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.commons.BaseActivity;
@@ -30,6 +30,7 @@ import com.fastebro.androidrgbtool.palette.PaletteSwatch;
 import com.fastebro.androidrgbtool.rgb.PictureScalingManager;
 import com.fastebro.androidrgbtool.utils.ImageUtils;
 import com.fastebro.androidrgbtool.widgets.RGBPanelData;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.greenrobot.eventbus.EventBus;
 

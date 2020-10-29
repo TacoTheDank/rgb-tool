@@ -3,8 +3,6 @@ package com.fastebro.androidrgbtool.rgb;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+
 import com.bumptech.glide.Glide;
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.commons.EventBaseFragment;
@@ -20,6 +20,7 @@ import com.fastebro.androidrgbtool.model.events.RGBAInsertionEvent;
 import com.fastebro.androidrgbtool.model.events.UpdateHexValueEvent;
 import com.fastebro.androidrgbtool.utils.ClipboardUtils;
 import com.fastebro.androidrgbtool.utils.ColorUtils;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.greenrobot.eventbus.Subscribe;
 

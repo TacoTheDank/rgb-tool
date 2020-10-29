@@ -6,8 +6,9 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
-import android.support.customtabs.CustomTabsService;
 import android.text.TextUtils;
+
+import androidx.browser.customtabs.CustomTabsService;
 
 import java.util.ArrayList;
 import java.util.List;

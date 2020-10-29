@@ -3,14 +3,15 @@ package com.fastebro.androidrgbtool.rgb;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.NumberPicker;
 
+import androidx.annotation.NonNull;
+
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.model.events.RGBAInsertionEvent;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import org.greenrobot.eventbus.EventBus;
 

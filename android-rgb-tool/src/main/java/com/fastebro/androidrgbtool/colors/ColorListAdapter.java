@@ -3,12 +3,13 @@ package com.fastebro.androidrgbtool.colors;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.PopupMenu;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.PopupMenu;
 
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.model.events.ColorDeleteEvent;

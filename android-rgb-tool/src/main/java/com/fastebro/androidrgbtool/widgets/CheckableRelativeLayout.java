@@ -1,10 +1,11 @@
 package com.fastebro.androidrgbtool.widgets;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.widget.Checkable;
 import android.widget.RelativeLayout;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by danielealtomare on 13/06/14.

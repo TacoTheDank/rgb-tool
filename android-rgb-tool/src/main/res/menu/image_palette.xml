@@ -15,7 +15,7 @@
         android:icon="@drawable/ic_action_share"
         android:orderInCategory="102"
         android:title="@string/action_share_palette"
-        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
         app:showAsAction="never" />
 
 </menu>
