@@ -1,28 +1,15 @@
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in /Applications/Android Studio.app/sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the ProGuard
-# include property in project.properties.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
-#
-
 # Application specific
 -keepattributes *Annotation*
-
-# Apache Commons-IO
--keep class org.apache.commons.io.**
 
 # PhotoView
 -keep class uk.co.senab.photoview.** { *; }
 -keep interface uk.co.senab.photoview.** { *; }
 
 # Picasso
--dontwarn com.squareup.okhttp.**
+-dontwarn com.squareup.okhttp3.**
 
-# Android v7 Support Library
--keep class android.support.v7.widget.ShareActionProvider { *; }
+# AndroidX Library
+-keep class androidx.appcompat.widget.ShareActionProvider { *; }
 
 # Greenbot EventBus
 -keepattributes *Annotation*
@@ -34,14 +21,10 @@
 # RxAndroid
 -dontwarn rx.internal.util.unsafe.**
 
-# LeakCanary
--keep class org.eclipse.mat.** { *; }
--keep class com.squareup.leakcanary.** { *; }
-
-# Android Support Design Library
--dontwarn android.support.design.**
--keep class android.support.design.** { *; }
--keep interface android.support.design.** { *; }
+# Android Material Library
+-dontwarn com.google.android.material.**
+-keep class com.google.android.material.** { *; }
+-keep interface com.google.android.material.** { *; }
 
 # Retrolambda
 -dontwarn java.lang.invoke.*
