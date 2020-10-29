@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.bumptech.glide.Glide;
 import com.fastebro.androidrgbtool.R;
 import com.fastebro.androidrgbtool.commons.EventBaseFragment;
 import com.fastebro.androidrgbtool.model.events.RGBAInsertionEvent;
@@ -21,6 +20,7 @@ import com.fastebro.androidrgbtool.model.events.UpdateHexValueEvent;
 import com.fastebro.androidrgbtool.utils.ClipboardUtils;
 import com.fastebro.androidrgbtool.utils.ColorUtils;
 import com.google.android.material.snackbar.Snackbar;
+import com.squareup.picasso.Picasso;
 
 import org.greenrobot.eventbus.Subscribe;
 
@@ -98,7 +98,9 @@ public class MainColorFragment extends EventBaseFragment {
 
         if (isAdded()) {
             // FIXME: restore last shown picture.
-            Glide.with(this).load(R.drawable.robot).into(pickerImage);
+            Picasso.get()
+                    .load(R.drawable.robot)
+                    .into(pickerImage);
 
             seekBarRed.setProgress(getMainActivity().getRedColor());
             seekBarGreen.setProgress(getMainActivity().getGreenColor());
