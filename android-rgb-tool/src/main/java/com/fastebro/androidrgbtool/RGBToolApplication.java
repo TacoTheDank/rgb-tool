@@ -4,7 +4,8 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.StrictMode;
-import android.preference.PreferenceManager;
+
+import androidx.preference.PreferenceManager;
 
 import timber.log.Timber;
 

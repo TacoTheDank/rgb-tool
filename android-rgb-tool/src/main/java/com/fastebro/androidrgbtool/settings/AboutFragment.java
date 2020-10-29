@@ -4,13 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
-import android.preference.PreferenceScreen;
+
+import androidx.annotation.NonNull;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragmentCompat;
 
 import com.fastebro.androidrgbtool.R;
 
-public class AboutFragment extends PreferenceFragment {
+public class AboutFragment extends PreferenceFragmentCompat {
     public static final String FRAGMENT_TAG = "fragment_about";
 
     private OnPreferenceSelectedListener onPreferenceSelectedListener;
@@ -19,7 +20,7 @@ public class AboutFragment extends PreferenceFragment {
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
 
         try {
@@ -30,13 +31,12 @@ public class AboutFragment extends PreferenceFragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.about);
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+    public boolean onPreferenceTreeClick(Preference preference) {
         if (preference.getIntent() != null && preference.getIntent().getData() != null) {
             if (preference.getIntent().getAction().equals(Intent.ACTION_SENDTO)) {
                 onPreferenceSelectedListener.onPreferenceSendEmailSelected(new String[]{preference.getIntent()
@@ -47,7 +47,7 @@ public class AboutFragment extends PreferenceFragment {
             return true;
         }
 
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+        return super.onPreferenceTreeClick(preference);
     }
 
     public interface OnPreferenceSelectedListener {
