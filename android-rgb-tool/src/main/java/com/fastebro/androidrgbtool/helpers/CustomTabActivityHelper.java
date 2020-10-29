@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.browser.customtabs.CustomTabsClient;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsServiceConnection;
@@ -100,7 +101,7 @@ public class CustomTabActivityHelper {
         }
         connection = new CustomTabsServiceConnection() {
             @Override
-            public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {
+            public void onCustomTabsServiceConnected(@NonNull ComponentName name, @NonNull CustomTabsClient client) {
                 CustomTabActivityHelper.this.client = client;
                 CustomTabActivityHelper.this.client.warmup(0L);
                 if (connectionCallback != null) {
